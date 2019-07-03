@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "mdx-deck index.mdx",
-    "build": "rimraf dist && mdx-deck build index.mdx --basepath=\"/js-scope-and-closure-ppt\" && cpr img dist/img",
+    "build": "rimraf dist && mdx-deck build index.mdx --basepath=\"/ts-tutorial-ppt\" && cpr img dist/img",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d dist"
   },
