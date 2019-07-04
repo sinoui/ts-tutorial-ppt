@@ -8,33 +8,18 @@ export { nightOwlFull as theme } from 'code-surfer/themes';
 
 TypeScript 是什么？
 
-TypeScript 是 JavaScript 加上类型声明，它可以编译成纯 JavaScript。TypeScript 支持所有 JavaScript 语法，包括 ES2015 ~ ES2019 的新语法。在 JavaScript 语法基础之上，给代码添加上了类型声明，这样我们就可以享受到静态类型编程带来的好处，如精准的语法智能提示、静态类型检查、增强可读性、友好的代码重构等。
-
----
+## TypeScript 是 JavaScript + 类型声明，它可以编译成纯 JavaScript。
 
 ![](./img/ts-tutorial-intelli-sense.png)
 
 ---
 
-## 开始使用 TypeScript
-
----
-
 <CodeSurferLayout >
 
-```shell 1,2,3,4 title="方式一：先创建ts-hello-world目录，进入这个目录，执行以下命令行"
-cd ts-hello-world
-yarn init
-yarn add typescript --dev
-yarn tsc --init
-```
+```shell title="开始使用 TypeScript"  subtitle="通过ts-lib-scripts创建一个用来练习的 TypeScript 项目"
 
-```shell 1 title="如果想在 React 项目中启用 TypeScript，使用create-react-app即可"
-npx create-react-app react-ts-hello-world --typescript
-```
-
-```shell 1 title="也可以通过ts-lib-scripts创建一个用来练习的 TypeScript 项目"
 npx ts-lib-scripts create ts-hello-world
+
 ```
 
 </CodeSurferLayout>
@@ -172,7 +157,7 @@ let colorName: string = Color[2];
 console.log(colorName);
 ```
 
-```ts 8 title="枚举" subtitle="输出Green,因为从枚举来看，Red值为1，Green值为2，Blue值为3"
+```ts 8 title="枚举" subtitle="输出'Green',因为从枚举来看，Red值为1，Green值为2，Blue值为3"
 enum Color {
   Red = 1,
   Green,
